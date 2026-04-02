@@ -206,9 +206,8 @@ Errors are returned with meaningful messages to indicate invalid operations.
 - Example configuration:
 
 - spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
--spring.datasource.username=your_username
+- spring.datasource.username=your_username
 - spring.datasource.password=your_password
-
 - spring.jpa.hibernate.ddl-auto=update
 - spring.jpa.show-sql=true
 
@@ -219,6 +218,29 @@ Errors are returned with meaningful messages to indicate invalid operations.
 - Run the Spring Boot application
 - Access APIs at http://localhost:8080
 
+## Assumptions
+
+- Role is passed as part of the request payload  
+- Users exist before records are created  
+- Role validation is handled at the controller level for simplicity  
+
+---
+
+## Possible Improvements
+
+- Implement authentication using JWT-based login  
+- Add global exception handling for consistent error responses  
+- Introduce pagination for handling large datasets  
+- Support combined filtering with multiple query parameters  
+- Deploy the application to a cloud platform for public access  
+
+---
+
+## Conclusion
+
+This project focuses on demonstrating backend fundamentals such as structured architecture, role-based access control, data modeling, and aggregation logic.  
+
+The implementation goes beyond basic CRUD operations by incorporating access control and dashboard-level insights, reflecting how a real-world backend system would be designed and used.
 
 
 
