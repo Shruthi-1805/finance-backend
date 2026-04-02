@@ -199,21 +199,26 @@ Errors are returned with meaningful messages to indicate invalid operations.
   "status": "ACTIVE"
 }
 ```
-Database Configuration
+## Database Configuration
 
-The application uses MySQL.
+- The application uses MySQL.
 
-Example configuration:
+- Example configuration:
 
-spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
-spring.datasource.username=your_username
-spring.datasource.password=your_password
+- spring.datasource.url=jdbc:mysql://localhost:3306/finance_db
+-spring.datasource.username=your_username
+- spring.datasource.password=your_password
 
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-How to Run
-Clone the repository
-Create a MySQL database named finance_db
-Configure database credentials in application.properties
-Run the Spring Boot application
-Access APIs at http://localhost:8080
+- spring.jpa.hibernate.ddl-auto=update
+- spring.jpa.show-sql=true
+
+## How to Run
+- Clone the repository
+- Create a MySQL database named finance_db
+- Configure database credentials in application.properties
+- Run the Spring Boot application
+- Access APIs at http://localhost:8080
+
+
+
+
